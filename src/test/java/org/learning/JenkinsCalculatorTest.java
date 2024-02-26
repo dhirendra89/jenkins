@@ -9,13 +9,13 @@ import org.junit.platform.commons.annotation.Testable;
 public class JenkinsCalculatorTest {
 
     @Test
-    public void addTest() {
+    public void addNumbersTest() {
         JenkinsCalculator calculator = new JenkinsCalculator();
         Assertions.assertEquals(300, calculator.addNumbers(100, 200));
     }
 
     @Test
-    public void subtractTest() {
+    public void subtractNumbersTest() {
         JenkinsCalculator calculator = new JenkinsCalculator();
         Assertions.assertEquals(80, calculator.subtractNumbers(100, 20));
     }
