@@ -1,19 +1,25 @@
 pipeline {
     agent any
     stages {
-        stage("clean") {
-            step {
-                bat "mvn clean"
+        stage("Clean") {
+            steps {
+                step {
+                    bat "mvn clean"
+                }
             }
         }
         stage("Test") {
-            step {
-                bat "mvn test"
+            steps {
+                step {
+                    bat "mvn test"
+                }
             }
         }
         stage("Package") {
-            step {
-                bat "mvn package"
+            steps {
+                step {
+                    bat "mvn package"
+                }
             }
         }
     }
